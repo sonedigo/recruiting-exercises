@@ -28,7 +28,6 @@ describe('', () => {
 
 	test('Multiple type of fruits and from multiple warehouses', () =>{
 		const data = inventory.implementCalculator({ apple: 10, banana: 5}, [{ name: 'owd', inventory: { apple: 6, banana: 4} }, { name: 'dm', inventory: { apple: 6 , banana: 4}}]);
-		console.log(data)
 		expect(data.owd.apple).toEqual(6);
 		expect(data.dm.apple).toEqual(4);
 		expect(data.owd.banana).toEqual(4);
